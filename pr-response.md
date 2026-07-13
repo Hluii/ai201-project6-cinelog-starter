@@ -4,8 +4,8 @@
 <!-- Fill in at the end — how you used AI tools during this project -->
 
 ## Comment 1 — Rename
-**What I did:**
-**How I verified:**
+**What I did:** Rename save_to_watchlist() to add_to_watchlist()
+**How I verified:** using ctrl + f in file and ctrl+ shift + f in folder directory
 
 ## Comment 2 — Deduplication
 **What I did:**
