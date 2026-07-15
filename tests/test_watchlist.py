@@ -66,7 +66,7 @@ def test_add_to_watchlist_nonexistent_film_raises(app, sample_user):
 
 # ── Deduplication ────────────────────────────────────────────────────────────
 
-def test_add_to_collection_duplicate_raises(app, sample_user, sample_film):
+def test_add_to_watchlist_duplicate_raises(app, sample_user, sample_film):
     """
     Adding the same film twice should raise AlreadyInWatchlistError,
     not silently create a duplicate entry.
