@@ -8,8 +8,8 @@
 **How I verified:** using ctrl + f in file and ctrl+ shift + f in folder directory
 
 ## Comment 2 — Deduplication
-**What I did:**
-**How I verified:**
+**What I did:** Add deduplication logic to add_to_watchlist() in services/watchlist_service.py
+**How I verified:** Added a test in tests/test_watchlist
 
 ## Comment 3 — Missing test
 **What I did:**
