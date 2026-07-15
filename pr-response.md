@@ -16,14 +16,16 @@
 **How I verified:** Ran the test file `pytest tests/test_watchlist.py -v`
 
 ## Comment 4 — Default visibility
-**My position:**
-**Reasoning:**
-**Tradeoff acknowledged:**
+**My position:** Watchlist entries will default to `public=True`
+**Reasoning:** Cinelog is a community film tracking app. I think that it would defeat the purpose of the community aspects of this app if all the entries in the user watchlist default to private. We would assume that, if community users are using this community platform to add to their watchlists, they would more often than not be creating public entries to be viewed by the rest of the community. Having to have them manually mark these entries as public if this did default to private would be a lot of extra work.
+**Tradeoff acknowledged:** I do acknowledge that some users may want their watchlist entries to be private, and therefore they would need to manually change their entries to private when the default is public. There would be a period in which they have created a watchlist entry and the entry could be viewed by others. I, however, think that since there are no notifications when people add to their personal watchlists for others, it's not expected that there is going to be someone monitoring a person's watchlist 24/7. Since this is such a low-stakes sector, this privacy concern can be outweighed by the convenience and usability for the users to have their entries be defaulted to public. 
 
 ## Comment 5 — Sort order
-**My position:**
-**Reasoning:**
-**Engagement with reviewer's point:**
+**My position:** Getting watchlists should be sorted in date added order rather than alphabetical. 
+**Reasoning:** My reasoning is that when people add something to their watchlist, it may be that they have heard a recommendation about it recently and they don't want to forget it. By having watchlists be sorted in alphabetical order, you may lose the context of someone else's entry that is being added.
+
+As a personal anecdote, when I add books that I want to read on my read list, I kind of do it haphazardly, like when it interests me. I sometimes don't really care too much about a book that I've added two months ago versus a book that I've added a week ago. If I wanted to go and look for the name of the book that I wanted to read but I couldn't remember what it was, I would assume that the most recently added book is the book I added last week and not the one I added two months ago.
+**Engagement with reviewer's point:** In response to the reviewers point, I agree. Most people want to see what they've added recently.
 
 ## Comment 6 — Rebase
 **What conflicted:**
