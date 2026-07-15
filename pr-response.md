@@ -12,8 +12,8 @@
 **How I verified:** Added a test in tests/test_watchlist
 
 ## Comment 3 — Missing test
-**What I did:**
-**How I verified:**
+**What I did:** Created test_watchlist.py and added test_add_to_watchlist_nonexistent_film_raises() test case
+**How I verified:** Ran the test file `pytest tests/test_watchlist.py -v`
 
 ## Comment 4 — Default visibility
 **My position:**
