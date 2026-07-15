@@ -19,7 +19,7 @@ Add deduplication logic to add_to_watchlist() in services/watchlist_service.py
 
 **How I verified:** 
 
-Added a test in tests/test_watchlist
+Added a test in tests/test_watchlist and ran test_add_to_watchlist_duplicate_raises, confirming a second add for the same user/film pair raises AlreadyInWatchlistError rather than silently succeeding or creating a duplicate row.
 
 ## Comment 3 — Missing test
 
@@ -89,3 +89,4 @@ I verified that none of the conflicts remained by:
 
 ## PR Description
 <!-- Written at the end — feature overview, design decisions, manual testing steps -->
+
